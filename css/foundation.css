@@ -1,0 +1,34 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap');
+
+
+/* typography */
+h1,
+h2,
+h3,
+h4{
+    font-family: 'Montserrat', sans-serif;  
+}
+
+
+ul{
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;   
+}
+
+span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    color: gray;
+}
+
+/* color */
+.primary-blue{
+    background-color:rgb(148, 175, 233);
+}
+
+
+a {
+    color: gray;
+    text-decoration: none; 
+  }

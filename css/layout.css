@@ -1,0 +1,126 @@
+/*responsive grid layout*/
+
+/*display top menu and header background image responsive to screen*/
+@media(max-width:351px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 50px auto 30px;
+        grid-template-areas:
+            "hd"
+            "sd"
+            "ct"
+            "ft";
+    }
+    
+    .header{
+        background-size: 40%;
+    }
+
+    .nav{
+        width: 100%;
+        display: inline-block;
+    }
+
+    ul{
+        padding-left: 0;
+        margin: 10px auto 10px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+/*display top menu and header background image is set to be contain*/
+@media(min-width:351px) and (max-width:601px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 50px auto 30px;
+        grid-template-areas:
+            "hd"
+            "sd"
+            "ct"
+            "ft";
+    }
+
+    .header{
+        background-size: contain;
+    }
+ 
+    ul{
+        padding-left: 0;
+        margin: 10px auto 10px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+/*switch from top menu to sidebar*/
+@media(min-width:601px){
+    .container{
+        display: grid;
+        grid-template-columns: 15% 85%;
+        grid-template-rows: 100px auto 50px;
+        grid-template-areas:
+            "hd hd"
+            "sd ct"
+            "ft ft";
+    }
+
+    .header{
+        background-size: contain;
+    }
+
+    .nav{
+        height:100%;
+    }
+
+    ul{
+        height: 100%;
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left:15%;
+    }
+ 
+}
+
+
+
+/*header*/
+.header{
+    grid-area: hd;
+
+    /*background image setup*/
+    background-image: url(../img/image0.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    
+    /*nested grid*/
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "logo site";
+}
+
+h1{
+    grid-area: site;
+}
+
+/*top menu or sidebar*/
+.sidebar{
+    grid-area: sd;
+}
+
+/*content*/
+.content{
+    grid-area: ct;
+}
+
+/*footer*/
+.footer{
+    grid-area: ft;
+    margin: auto;
+} 
