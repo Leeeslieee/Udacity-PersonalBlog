@@ -1,18 +1,16 @@
-
-
-
 /*button*/
 button{
-   background:none;
-   border:none;
-   color:gray;
+   background: none;
+   border: none;
+   color: gray;
 }
+
 button:hover{
-    height:25px;
-    color:rgb(255, 255, 255);
-    background-color:rgba(185, 204, 16, 0.959);
+    height: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(67, 129, 54, 0.932);
     border-radius: 2px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 /*image*/
@@ -23,3 +21,23 @@ img{
     object-position: 50% 40%;
     border-radius: 5px;
 }
+
+.image{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.avatar{
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+}
+
+/*navbar*/
+nav{
+    background-color: rgba(67, 129, 54, 0.932);
+    border-radius: 5px;
+
+}
+
+

@@ -1,34 +1,91 @@
 /* Import */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&family=Open+Sans&display=swap');
 
 /* typography */
-h1,
-h2,
-h3,
-h4{
-    font-family: 'Montserrat', sans-serif;  
+/* usage of different selectors
+    h1: webpage title
+    h2: article title
+    h3: navigation
+    h4: author info
+    h5: footer
+*/
+*{
+    font-family: 'Montserrat', sans-serif;
 }
 
+h1{
+   font-weight: 700;
+ 
+}
+
+h2,
+h3{
+    font-weight: 400;
+}
+
+h4{
+    font-weight: 700;
+    font-style: italic;
+    margin: 0;
+}
+
+h5{
+    font-style: italic;
+    display: inline;
+}
+
+a {
+    text-decoration: none; 
+  }
 
 ul{
-    font-family: 'Montserrat', sans-serif;
     list-style-type: none;   
+    color: white;
 }
 
 span{
-    font-family: 'Montserrat', sans-serif;
     font-size: 0.9em;
     color: gray;
 }
 
 /* color */
-.primary-blue{
-    background-color:rgb(148, 175, 233);
+.nav{
+    color: white;
 }
 
-
-a {
+h5{
     color: gray;
-    text-decoration: none; 
-  }
+}
+
+.pimary-green{
+    color: rgba(67, 129, 54, 0.932);
+}
+
+/*Social Media Icons*/
+.fa{
+    padding: 10px;
+    font-size: 40px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+/*Facebook*/
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+/*Twitter*/
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/*LinkedIn*/
+.fa-linkedin {
+    background: #0e76a8;
+    color: white;
+}

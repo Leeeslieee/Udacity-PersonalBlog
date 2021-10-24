@@ -1,2 +1,49 @@
 @import 'foundation.css';
 @import 'layout.css';
+@import 'component.css';
+
+.content{
+    display: grid;
+    grid-template-rows: 100px 250px auto auto;
+    grid-template-areas:
+        "hd"
+        "image"
+        "main"
+        "info";
+    grid-gap: 20px;
+}
+
+@media(min-width: 600px){
+    .content{
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 100px 300px auto;
+        grid-template-areas:
+            "hd hd"
+            "image info"
+            "main info";
+        grid-gap: 20px;
+    }
+
+    .nav{
+        /*TODO: Is there a way to make the nav responsive but at the same time
+        with the same height when switching between tabs?*/
+        height: 600px;
+    }
+}
+
+.heading{
+    grid-area: hd;
+}
+
+.image{
+    grid-area: image;
+}
+
+.main{
+    grid-area: main;
+}
+
+.info{
+    grid-area: info;
+}
