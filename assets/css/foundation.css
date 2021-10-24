@@ -57,8 +57,16 @@ h5{
     color: gray;
 }
 
-.pimary-green{
+.primary-green{
     color: rgba(67, 129, 54, 0.932);
+}
+
+.primary-blue{
+    color:rgba(69, 132, 226, 0.932);
+}
+
+.primary-gray{
+    color: rgb(102, 118, 121);
 }
 
 /*Social Media Icons*/
